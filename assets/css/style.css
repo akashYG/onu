@@ -1,0 +1,276 @@
+/*!
+ * Template Name/Project Name: XYZ
+ * Developer Name: Mr ABC
+ * Conatct: abc@gmail.com
+ * Visit: https://abc.info
+ */
+ /*common class start*/
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&display=swap');
+ :root{
+    --brand-color:#87d37c;
+    --white-color:#fff;
+    --black-color:#000;
+    --orange-color:#FF6C37;
+ }
+  /*common class end*/
+  /*header code start*/
+  header{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  /*nav code start*/
+  .navbar .navbar-brand .img-fluid {
+    max-height: 70px;
+}
+.navbar .navbar-toggler {
+  border: var(--bs-border-width) solid var(--white-color);
+  color: var(--white-color);
+}
+.navbar .nav-link {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar .nav-link:focus, .navbar .nav-link:hover {
+    color: var(--brand-color);
+}
+.navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .show>.nav-link {
+    color: var(--brand-color);
+}
+
+/*nav code start*/
+/*slider start*/
+.slider .carousel-item{
+  padding: 140px 0px 160px 0px;
+}
+.slider .carousel-item h2, .slider .carousel-item h3, .slider .carousel-item h4 {
+  color: var(--white-color);
+}
+.slider .carousel-item h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  border: 2px solid var(--white-color);
+  display: inline-block;
+}
+.slider .carousel-item h2 span{
+  font-family: 'Roboto', sans-serif;
+  color: var(--brand-color);
+}
+.slider .carousel-item h3{
+  font-family: 'Roboto', sans-serif; 
+}
+.slider .carousel-item h4{
+  font-family: 'Roboto', sans-serif;
+  
+}
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 1;
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+}
+.carousel-indicators .active{
+  background: var(--brand-color);
+}
+/*slider end*/
+ /*header code end*/
+ /*about us code start*/
+ .about-us-section{
+  cursor: pointer;
+  transition: .5s;
+ }
+ .about-us-section .title-area h2{
+  font-family:'Archivo Narrow', sans-serif;
+ }
+ .about-us-section .service-content.active{
+  color: var(--brand-color);
+ }
+ .about-us-section .service-content:hover{
+  color: var(--brand-color);
+ }
+ /*about us code end*/
+  /*service us code start*/
+  .service-section{
+    background: #e1e1e1;
+  }
+  .service-content{
+    position: relative;
+    overflow: hidden;
+  }
+  .service-content-overlay{
+    position: absolute;
+    top:-100%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    transition: .5s all;
+    cursor: pointer;
+  }
+.service-content:hover .service-content-overlay{
+  top: 0px;
+}
+.service-content-overlay a{
+  color:var(--white-color);
+  text-decoration: none;
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  transition: .5s all;
+  transform: translateY(90px);
+  display: inline-block;
+}
+.service-content-overlay a:hover{
+  background: var(--orange-color);
+}
+.service-content-overlay .fa-brands.fa-tiktok{
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+.service-content-overlay .fa-solid.fa-location-dot{
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+/*service us code end*/
+/*portfolio code start*/
+.portfolio-area .nav .nav-item .nav-link{
+  color:var(--white-color);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 6px 10px;
+  background: var(--black-color);
+}
+.portfolio-area .nav .nav-item .nav-link:hover{
+  background: var(--brand-color);
+  color: var(--white-color);
+  transition: .5s;
+  cursor: pointer;
+}
+.portfolio-area .nav .nav-item .nav-link.active{
+  background: var(--brand-color);
+}
+.portfolio-content{
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-content-overlay{
+  position: absolute;
+  top: -100%;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  transition: .5s all;
+  cursor: pointer;
+}
+.portfolio-content:hover .portfolio-content-overlay{
+  top: 0px;
+}
+.portfolio-content-overlay h2{
+  color:var(--brand-color);
+  text-decoration: none;
+  padding: 15px;
+  margin-right: 10px;
+  transition: .5s all;
+  transform: translateY(90px);
+  text-transform: uppercase;
+}
+.portfolio-content-overlay h2:hover{
+  color: var(--orange-color);
+}
+/*portfolio code end*/
+/*pricing code start*/
+.content-area .card .card-body{
+  background: #000;
+  color: #fff;
+}
+.card .card-body.active{
+  background: var(--brand-color);
+}
+.content-area .card .card-body h4,.content-area .card .card-body h5{
+  background: #000;
+  color: #fff;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  margin: 65px;
+}
+.content-area .card .card-body.active.main h4{
+  background: #87d37c;
+}
+.content-area .card .card-body .list-group .list-group-item{
+  background: #000;
+  color: #fff;
+  border-bottom: 1px solid var(--white-color);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.content-area .card .card-body .list-group.main .list-group-item{
+  background: #87d37c;
+}
+.content-area .card .card-body button{
+  padding-bottom: 10px;
+  margin: 10px;
+}
+/*pricing code end*/
+/* Contact section start */
+.address-area h4{
+  color: #333;
+  font-weight: 600;
+}
+.address-area a{
+  color: #666;
+}
+.address-area i{
+  color: #30C39E;
+}
+.address-area iframe{
+  border: 7px solid #d4d4d4;
+  width: 100%;
+  min-height: 200px;
+}
+.contact-form i{
+  color: #30C39E;
+}
+.contact-form .btn-primary {
+  color: #fff;
+  background-color: #0A8EA0;
+  border-color: #0A8EA0;
+  border: 2px solid;
+}
+.contact-form .btn-primary:hover {
+  color: #666;
+  background-color: #fff;
+  border-color: #666;
+}
+/* Contact section end */
+/*form code start*/
+.form-section{
+  background-color: #f5f5f5;
+  padding: 70px;
+}
+.btn-submit{
+  background: #87d37c;
+  color: #ffffff;
+  width: 150px;
+}
+.btn-submit:hover{
+  background: #FF6C37;
+  color: #ffffff;
+}
+.form-section .form-area form input.mess{
+  width: 450px;
+  height: 60px;
+}
+.form-section .form-area form input.mess-1{
+  width: 450px
+}

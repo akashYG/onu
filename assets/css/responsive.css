@@ -1,0 +1,98 @@
+/*!
+ * Template Name/Project Name: XYZ
+ * Developer Name: Mr ABC
+ * Conatct: abc@gmail.com
+ * Visit: https://abc.info
+ */
+ /*common class start*/
+ /*for custom fonts*/
+ /*header start*/
+@media (min-width:0px) and (max-width:575px){
+  .navbar{
+    max-height: 70px;
+    position: relative;
+    z-index: 1;
+  }
+  .navbar .nav-link{
+    background: rgba(0,0,0,0.8);
+    border-bottom: 1px solid var(--white-color);
+    padding-right: 10px;
+    display: inline-block;
+    min-width:150px;
+  }
+  .carousel{
+    padding: 60px 0px 80px 0px;
+  }
+}
+/*header end*/
+ /*header start*/
+ @media (min-width:575px) and (max-width:767px){
+  .navbar{
+    max-height: 70px;
+    position: relative;
+    z-index: 1;
+  }
+  .navbar .nav-link{
+    background: rgba(0,0,0,0.8);
+    border-bottom: 1px solid var(--white-color);
+    padding-right: 10px;
+    display: inline-block;
+    min-width:150px;
+  }
+  .carousel{
+    padding: 60px 0px 80px 0px;
+  }
+}
+/*header end*/
+ /*header start*/
+ @media (min-width:767px) and (max-width:991px){
+  .navbar{
+    max-height: 70px;
+    position: relative;
+    z-index: 1;
+  }
+  .navbar .nav-link{
+    background: rgba(0,0,0,0.8);
+    border-bottom: 1px solid var(--white-color);
+    padding-right: 10px;
+    display: inline-block;
+    min-width:150px;
+  }
+  .carousel{
+    padding: 60px 0px 80px 0px;
+  }
+}
+/*header end*/
+/*pricing start*/
+@media (min-width:0px) and (max-width:575px){
+  .content-area{
+    padding: 10px;
+    margin: 10px;
+  }
+  .content-area-1{
+    padding: 10px;
+    margin: 10px;
+  }
+} 
+@media (min-width:575px) and (max-width:767px){
+  .content-area{
+    padding: 10px;
+    margin: 10px;
+  }
+  .content-area-1{
+    padding: 10px;
+    margin: 10px;
+  }
+}
+@media (min-width:767px) and (max-width:991px){
+  .content-area{
+    padding: 10px;
+    margin: 10px;
+  }
+  .content-area-1{
+    padding: 10px;
+    margin: 10px;
+  }
+}
+/*pricing end*/
+/*
